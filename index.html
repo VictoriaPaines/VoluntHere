@@ -27,14 +27,14 @@
   <!-- jumbotron -->
   <div class="jumbotron">
   <h1><form class="form-inline"><label for="dropdown">I want to help with...</label>
-    <select class="form-control" name="dropdown" id="dropdown">
+    <div class="input-group input-group-lg"><select class="form-control" name="dropdown" id="dropdown" onchange="window.location.href=this.options[this.selectedIndex].value + '.html'">
       <option></option>
-      <option>Food distribution</option>
-      <option>Clothing</option>
-      <option>Education</option>
-      <option>Legal</option>
-      <option>Women and children</option>
-    </select></form></h1>
+      <option value="food-distribution">Food distribution</option>
+      <option value="clothing">Clothing</option>
+      <option value="education">Education</option>
+      <option value="legal-aid">Legal Aid</option>
+      <option value="womenandchildren">Women and children</option>
+    </select></div></form></h1>
   </div>
 
 
