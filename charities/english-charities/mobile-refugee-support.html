@@ -17,7 +17,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="../../css/custombootstrap.css" />
-</head>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </head>
 <body>
 
 
@@ -166,22 +167,56 @@ Each day they set out to support the unfortunate people who have had to leave th
 <br clear="all" />
 
 <h3 b>Social media links:</h3>
-<div class="btn-toolbar" role="toolbar" aria-label="social media links">
-  <a href="https://www.facebook.com/MobileRefugeeSupport/"> <div class="btn-group" role="group" aria-label="facebook">Facebook</div> </a>
-  <a href="https://twitter.com/MRefugeeSupport"> <div class="btn-group" role="group" aria-label="fnstagram">Instagram</div> </a>
-  <a href="https://www.instagram.com/mobilerefugeesupport/"> <div class="btn-group" role="group" aria-label="...">Twitter</div> </a>
+
+<div class="btn-group" role="group" aria-label="...">
+  <a href="https://www.facebook.com/MobileRefugeeSupport" role="button" class="btn btn-default"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com/MRefugeeSupport" role="button" class="btn btn-default"><i class="fab fa-twitter"></i></a>
+  <a href="https://instagram.com/mobilerefugeesupport" role="button" class="btn btn-default"><i class="fab fa-instagram"></i></a>
 </div>
-
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Add font awesome icons -->
-<a href="https://www.facebook.com/MobileRefugeeSupport/" class="fa fa-facebook"></a>
-<a href="https://twitter.com/MRefugeeSupport" class="fa fa-twitter"></a>
-
 <br clear="all" />
+<br /><br /><br />
 
-v
+<!-- modal -->
+<div class="modal fade" id="suggestCharityModal" tabindex="-1" role="dialog" aria-labelledby="suggestCharityModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title" id="suggestCharityModalLabel">Suggest a Charity</h4>
+  </div>
+  <div class="modal-body">
+    <div class="alert alert-warning" role="alert"><b>Warning:</b> This is purely for demonstration purposes and does not work!</div>
+
+    <p>
+      I am always looking to learn about more charities which I can add to this site to help them get greater exposure and encourage people to volunteer for them. If you have any suggestions, please fill out the form below and I shall be in touch.
+    </p>
+
+    <form>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email" aria-describedby="helpBlock" required>
+        <span id="helpBlock" class="help-block">This is so I can get in touch with you for more information about the charity.</span>
+      </div>
+      <div class="form-group">
+        <label for="charity-name">Charity Name</label>
+        <input type="text" class="form-control" id="charity-name" placeholder="Charity Name" required>
+      </div>
+      <div class="form-group">
+        <label for="charity-description">Charity Description</label>
+        <textarea class="form-control" rows="3" placeholder="Please enter a brief description of the charity." required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="charity-website">Charity Website</label>
+        <div class="input-group">
+          <span class="input-group-addon" id="web-glyphicon"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></span>
+          <input type="text" id="charity-website" class="form-control" placeholder="Charity Website" aria-describedby="web-glyphicon">
+        </div>          </div>
+      <button type="submit" class="btn btn-primary" onclick="alert('Thank you for submitting!')">Submit</button>
+    </form>
+  </div>
+</div>
+</div>
+</div>
 </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
