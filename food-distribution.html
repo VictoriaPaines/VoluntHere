@@ -54,6 +54,9 @@
 </li>
          <li><a href="about-me.html">About Me</a></li>
        </ul>
+       <ul class="nav navbar-nav navbar-right">
+         <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#suggestCharityModal">Suggest a Charity</button>
+       </ul>
     </div>
 </div>
 </nav>
@@ -84,6 +87,47 @@
   </div>
 </div>
 
+<!-- modal -->
+<div class="modal fade" id="suggestCharityModal" tabindex="-1" role="dialog" aria-labelledby="suggestCharityModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title" id="suggestCharityModalLabel">Suggest a Charity</h4>
+  </div>
+  <div class="modal-body">
+    <div class="alert alert-warning" role="alert"><b>Warning:</b> This is purely for demonstration purposes and does not work!</div>
+
+    <p>
+      I am always looking to learn about more charities which I can add to this site to help them get greater exposure and encourage people to volunteer for them. If you have any suggestions, please fill out the form below and I shall be in touch.
+    </p>
+
+    <form>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email" aria-describedby="helpBlock" required>
+        <span id="helpBlock" class="help-block">This is so I can get in touch with you for more information about the charity.</span>
+      </div>
+      <div class="form-group">
+        <label for="charity-name">Charity Name</label>
+        <input type="text" class="form-control" id="charity-name" placeholder="Charity Name" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputFile">Charity Description</label>
+        <textarea class="form-control" rows="3" placeholder="Please enter a brief description of the charity." required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="charity-website">Charity Website</label>
+        <div class="input-group">
+          <span class="input-group-addon" id="web-glyphicon"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></span>
+          <input type="text" id="charity-website" class="form-control" placeholder="Charity Website" aria-describedby="web-glyphicon">
+        </div>          </div>
+      <button type="submit" class="btn btn-primary" onclick="alert('Thank you for submitting!')">Submit</button>
+    </form>
+  </div>
+</div>
+</div>
+</div>
 </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
