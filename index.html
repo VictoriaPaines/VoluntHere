@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115168811-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115168811-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-115168811-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115168811-1');
+  </script>
 
   <title>Example html page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/custombootstrap.css" />
 </head>
+
 <body>
 
 
 
-<!-- Navbar -->
-<nav class="navbar navbar-inverse">
-<div class="container">
-  <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">WORKING TITLE</a>
+        <a class="navbar-brand" href="#">WORKING TITLE</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English Charities <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="charities/english-charities/care4calais.html">Care4Calais</a></li>
+              <li><a href="charities/english-charities/dunkirk-refugee-womens-centre.html">Dukirk Refugee Women's Centre</a></li>
+              <li><a href="charities/english-charities/help-refugees.html">Help Refugees</a></li>
+              <li><a href="charities/english-charities/mobile-refugee-support.html">Mobile Refugee Support</a></li>
+              <li><a href="charities/english-charities/refugee-community-kitchen.html">Refugee Community Kitchen</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">French Charities <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="charities/french-charities/la-cabane-juridique.html">La Cabane Juridique</a></li>
+            </ul>
+          </li>
+          <li><a href="about-me.html">About Me</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#suggestCharityModal">Suggest a Charity</button>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav">
-         <li class="dropdown">
-           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English Charities <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li><a href="charities/english-charities/care4calais.html">Care4Calais</a></li>
-        <li><a href="charities/english-charities/dunkirk-refugee-womens-centre.html">Dukirk Refugee Women's Centre</a></li>
-        <li><a href="charities/english-charities/help-refugees.html">Help Refugees</a></li>
-        <li><a href="charities/english-charities/mobile-refugee-support.html">Mobile Refugee Support</a></li>
-        <li><a href="charities/english-charities/refugee-community-kitchen.html">Refugee Community Kitchen</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">French Charities <span class="caret"></span></a>
- <ul class="dropdown-menu">
-   <li><a href="charities/french-charities/la-cabane-juridique.html">La Cabane Juridique</a></li>
- </ul>
-</li>
-         <li><a href="about-me.html">About Me</a></li>
-       </ul>
-    </div>
-</div>
-</nav>
+  </nav>
 
-<div class="container">
+  <div class="container">
 
-  <!-- jumbotron -->
-  <div class="jumbotron">
-  <h1><form class="form-inline"><label for="dropdown">I want to help with...</label>
+    <!-- jumbotron -->
+    <div class="jumbotron">
+      <h1><form class="form-inline"><label for="dropdown">I want to help with...</label>
     <div class="input-group input-group-lg"><select class="form-control" name="dropdown" id="dropdown" onchange="window.location.href=this.options[this.selectedIndex].value + '.html'">
       <option value="index"></option>
       <option value="food-distribution">Food distribution</option>
@@ -71,56 +79,97 @@
       <option value="legal-aid">Legal Aid</option>
       <option value="women-and-children">Women and children</option>
     </select></div></form></h1>
-  </div>
-
-
-
-
- <!-- Homepage Image Slideshow -->
-  <div id="homepage-carousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="..." alt="...">
-        <div class="carousel-caption">
-          ...
-        </div>
-      </div>
-      <div class="item">
-        <img src="..." alt="...">
-        <div class="carousel-caption">
-          ...
-        </div>
-      </div>
-      ...
     </div>
 
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+
+
+
+    <!-- Homepage Image Slideshow -->
+    <div id="homepage-carousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="..." alt="...">
+          <div class="carousel-caption">
+            ...
+          </div>
+        </div>
+        <div class="item">
+          <img src="..." alt="...">
+          <div class="carousel-caption">
+            ...
+          </div>
+        </div>
+        ...
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+    </div>
+
+    <!-- modal -->
+<div class="modal fade" id="suggestCharityModal" tabindex="-1" role="dialog" aria-labelledby="suggestCharityModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="suggestCharityModalLabel">Suggest a Charity</h4>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-warning" role="alert"><b>Warning:</b> This is purely for demonstration purposes and does not work!</div>
+
+        <p>
+          I am always looking to learn about more charities which I can add to this site to help them get greater exposure and encourage people to volunteer for them. If you have any suggestions, please fill out the form below and I shall be in touch.
+        </p>
+
+        <form>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email" aria-describedby="helpBlock" required>
+            <span id="helpBlock" class="help-block">This is so I can get in touch with you for more information about the charity.</span>
+          </div>
+          <div class="form-group">
+            <label for="charity-name">Charity Name</label>
+            <input type="text" class="form-control" id="charity-name" placeholder="Charity Name" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">Charity Description</label>
+            <textarea class="form-control" rows="3" placeholder="Please enter a brief description of the charity." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="charity-website">Charity Website</label>
+            <div class="input-group">
+              <span class="input-group-addon" id="web-glyphicon"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></span>
+              <input type="text" id="charity-website" class="form-control" placeholder="Charity Website" aria-describedby="web-glyphicon">
+            </div>          </div>
+          <button type="submit" class="btn btn-primary" onclick="alert('Thank you for submitting!')">Submit</button>
+        </form>
+      </div>
+    </div>
   </div>
-
-
-
-
 </div>
+
+
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- <script src="./js/bootstrap.min.js"> -->
 
 </body>
+
 </html>
